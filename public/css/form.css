@@ -1,0 +1,74 @@
+@import './input.css';
+.flex-sb{
+    justify-content: space-between;
+}
+div.flex-right{
+    padding: 3em;
+}
+div.flex-left{
+    padding: 3em;
+}
+@media only screen and (max-width: 789px){
+    div#left{display:none}
+    div#right{display:none}
+}
+.form-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+.hide{
+    display: none;
+}
+@media only screen and (min-width: 789px){
+    .full{
+        height: 100vh;
+    }
+    .bg-img{
+        background-image: url(https://i.pinimg.com/564x/f2/6e/4b/f26e4bdca4723c8d5c040de72ad94b25.jpg);
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+    .container-root{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .container-form{
+        background-color:rgba(31, 30, 30, 0.7);
+        width: 80vw;
+        height: 75vh;
+        display: flex;
+        flex-direction: row;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        position: relative;
+    }
+    .container-form div.active{
+        background-color:#fff;
+        margin-top: -40px;
+        margin-bottom: -40px;
+        -webkit-box-shadow: 5px 5px 40px rgba(0, 0, 0, .2), -5px -5px 40px rgba(0, 0, 0, .2);
+        box-shadow: 5px 5px 40px rgba(0, 0, 0, .2), -5px -5px 40px rgba(0, 0, 0, .2);
+        /* -webkit-transition: ;
+        -moz-transition: ;
+        -o-transition: ;
+        transition: ; */
+    }
+    div.flex-left{
+        display: block;
+        width: 50%;
+        padding: 3em;
+    }
+    div.flex-right{
+        display: block;
+        width: 50%;
+        padding: 3em;
+    }
+    div.small-screen{
+        display: none;
+    }
+}
