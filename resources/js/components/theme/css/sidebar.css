@@ -28,7 +28,7 @@ body {
   height: 100%;
   margin-left: -200px;
   overflow-y: auto;
-  background: #384850;
+  background: #183050;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -64,6 +64,12 @@ body {
 .sidebar-nav li {
   text-indent: 20px;
   line-height: 40px;
+}
+.sidebar-nav li.active {
+  background-color: #ffffff55;
+}
+.sidebar-nav li.active a{
+  color:#fff;
 }
 
 .sidebar-nav li a {
