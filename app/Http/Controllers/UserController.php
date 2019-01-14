@@ -12,7 +12,6 @@ use App\Notifications\Validate;
 class UserController extends Controller
 {
     public function register(Request $req){
-        return $req;
         if(User::where('email', $req->email)->count() > 0){
             return ['error'=>'Este email já está em uso.', 'field'=>'email'];
         }

@@ -1766,7 +1766,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "body {\n  overflow-x: hidden;\n}\n\n.navbar{\n  position: fixed;\n}\n.left-m{\n  margin-left: -20px;\n  background-color: #183050;\n  color: #fff;\n}\n\n#wrapper {\n  padding-left: 0;\n  transition: all 0.5s ease;\n}\n\n#wrapper.toggled {\n  padding-left: 200px;\n}\n\n#sidebar-wrapper {\n  z-index: 1000;\n  position: fixed;\n  left: 200px;\n  width: 0;\n  height: 100%;\n  margin-left: -200px;\n  overflow-y: auto;\n  background: #183050;\n  transition: all 0.5s ease;\n}\n\n#wrapper.toggled #sidebar-wrapper {\n  width: 200px;\n}\n\n#page-content-wrapper {\n  width: 100%;\n  position: absolute;\n}\n\n#wrapper.toggled #page-content-wrapper {\n  position: absolute;\n  margin-right: -200px;\n}\n\n\n/* Sidebar Styles */\n\n.sidebar-nav {\n  position: absolute;\n  top: 0;\n  width: 200px;\n  margin: 0;\n  padding: 0;\n  list-style: none;\n}\n\n.sidebar-nav li {\n  text-indent: 20px;\n  line-height: 40px;\n}\n\n.sidebar-nav li a {\n  display: block;\n  text-decoration: none;\n  color: #999999;\n}\n\n.sidebar-nav li a:hover {\n  text-decoration: none;\n  color: #fff;\n  background: #707880;\n}\n\n.sidebar-nav li a:active, .sidebar-nav li a:focus {\n  text-decoration: none;\n}\n\n.sidebar-nav>.sidebar-brand {\n  height: 65px;\n  font-size: 18px;\n  line-height: 60px;\n}\n\n.sidebar-nav>.sidebar-brand a {\n  color: #999999;\n}\n\n.sidebar-nav>.sidebar-brand a:hover {\n  color: #fff;\n  background: none;\n}\n\n@media(min-width:768px) {\n  #wrapper {\n    padding-left: 0;\n  }\n  #wrapper.toggled {\n    padding-left: 200px;\n  }\n  #sidebar-wrapper {\n    width: 0;\n  }\n  #wrapper.toggled #sidebar-wrapper {\n    width: 200px;\n  }\n  #page-content-wrapper {\n    position: relative;\n  }\n  #wrapper.toggled #page-content-wrapper {\n    position: relative;\n    margin-right: 0;\n  }\n}\n", ""]);
+exports.push([module.i, "body {\n  overflow-x: hidden;\n}\n\n.navbar{\n  position: fixed;\n}\n.bg-adv{\n  background-color: #183050;\n}\n#wrapper {\n  padding-left: 0;\n  transition: all 0.5s ease;\n}\n\n#wrapper.toggled {\n  padding-left: 200px;\n}\n\n#sidebar-wrapper {\n  z-index: 1000;\n  position: fixed;\n  left: 200px;\n  width: 0;\n  height: 100%;\n  margin-left: -200px;\n  overflow-y: auto;\n  background: #384850;\n  transition: all 0.5s ease;\n}\n\n#wrapper.toggled #sidebar-wrapper {\n  width: 200px;\n}\n\n#page-content-wrapper {\n  width: 100%;\n  position: absolute;\n}\n\n#wrapper.toggled #page-content-wrapper {\n  position: absolute;\n  margin-right: -200px;\n}\n\n\n/* Sidebar Styles */\n\n.sidebar-nav {\n  position: absolute;\n  top: 0;\n  width: 200px;\n  margin: 0;\n  padding: 0;\n  list-style: none;\n}\n\n.sidebar-nav li {\n  text-indent: 20px;\n  line-height: 40px;\n}\n\n.sidebar-nav li a {\n  display: block;\n  text-decoration: none;\n  color: #999999;\n}\n\n.sidebar-nav li a:hover {\n  text-decoration: none;\n  color: #fff;\n  background: #707880;\n}\n\n.sidebar-nav li a:active, .sidebar-nav li a:focus {\n  text-decoration: none;\n}\n\n.sidebar-nav>.sidebar-brand {\n  height: 65px;\n  font-size: 18px;\n  line-height: 60px;\n}\n\n.sidebar-nav>.sidebar-brand a {\n  color: #999999;\n}\n\n.sidebar-nav>.sidebar-brand a:hover {\n  color: #fff;\n  background: none;\n}\n\n@media(min-width:768px) {\n  #wrapper {\n    padding-left: 0;\n  }\n  #wrapper.toggled {\n    padding-left: 200px;\n  }\n  #sidebar-wrapper {\n    width: 0;\n  }\n  #wrapper.toggled #sidebar-wrapper {\n    width: 200px;\n  }\n  #page-content-wrapper {\n    position: relative;\n  }\n  #wrapper.toggled #page-content-wrapper {\n    position: relative;\n    margin-right: 0;\n  }\n}\n", ""]);
 
 // exports
 
@@ -1785,7 +1785,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".bg-light{\r\n    background-color: #eff3f9 !important;\r\n}\r\nheader.head{\r\n    height: 55vh;\r\n    width: 100%;\r\n    background-image: url(https://i.pinimg.com/564x/58/cb/a1/58cba1830e64889086e77e3a9a0e3920.jpg);\r\n    background-position: 50% 50%;\r\n    background-size: cover;\r\n    display: flex;\r\n    margin-bottom: 15.3px;\r\n}\r\n.head-footer{\r\n    display: flex;\r\n    align-self: flex-end;\r\n    flex-direction: row;\r\n    width: 100%;\r\n    background-color: white;\r\n    border: 1px solid #e0e0e0;\r\n    border-top: 0;\r\n}\r\na.lnk-center{\r\n    display:flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    text-decoration: none;\r\n    font-weight: 600;\r\n    color: #707880;\r\n    padding: 0 20px;\r\n}\r\na.lnk-center:hover{\r\n    color: #384850;\r\n}\r\n.head-img{\r\n    max-height: 80px;\r\n    max-width: 80px;\r\n    margin-top: -60px;\r\n    border: 3px solid #fff;\r\n    border-radius: 40px;\r\n    background-color: #fff;\r\n}\r\n#contentPage{\r\n    padding: 0 20px;\r\n}", ""]);
+exports.push([module.i, ".bg-light{\n    background-color: #eff3f9 !important;\n}\nheader.head{\n    height: 55vh;\n    width: 100%;\n    background-image: url(https://i.pinimg.com/564x/58/cb/a1/58cba1830e64889086e77e3a9a0e3920.jpg);\n    background-position: 50% 50%;\n    background-size: cover;\n    display: flex;\n    margin-bottom: 15.3px;\n}\n.head-footer{\n    display: flex;\n    align-self: flex-end;\n    flex-direction: row;\n    width: 100%;\n    background-color: white;\n    border: 1px solid #e0e0e0;\n    border-top: 0;\n}\na.lnk-center{\n    display:flex;\n    justify-content: center;\n    align-items: center;\n    text-decoration: none;\n    font-weight: 600;\n    color: #707880;\n    padding: 0 20px;\n}\na.lnk-center:hover{\n    color: #384850;\n}\n.head-img{\n    max-height: 80px;\n    max-width: 80px;\n    margin-top: -60px;\n    border: 3px solid #fff;\n    border-radius: 40px;\n    background-color: #fff;\n}\n#contentPage{\n    padding: 0 20px;\n}", ""]);
 
 // exports
 
@@ -48061,13 +48061,15 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
-        className: "navbar navbar-expand-sm navbar-light bg-transparent"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "btn left-m",
+        className: "navbar navbar-expand-sm fixed-top navbar-light bg-adv"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "https://via.placeholder.com/150x30"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "btn bg-transparent text-white",
         onClick: this.props.openMenu
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fas fa-bars"
-      })));
+      }))));
     }
   }]);
 
@@ -48228,14 +48230,11 @@ function (_Component) {
         id: "sidebar-wrapper"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "sidebar-nav"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "sidebar-brand"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/cli"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/svg/logo.svg",
-        alt: "LOGO - Home"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: {
+          height: 60
+        }
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "active"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/cli"
@@ -48268,8 +48267,8 @@ function (_Component) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\PC\PROJECT\adv-server\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\PC\PROJECT\adv-server\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/rsx/Documents/Projects/adv-server/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/rsx/Documents/Projects/adv-server/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

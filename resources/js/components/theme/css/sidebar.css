@@ -5,12 +5,9 @@ body {
 .navbar{
   position: fixed;
 }
-.left-m{
-  margin-left: -20px;
+.bg-adv{
   background-color: #183050;
-  color: #fff;
 }
-
 #wrapper {
   padding-left: 0;
   -webkit-transition: all 0.5s ease;
@@ -31,7 +28,7 @@ body {
   height: 100%;
   margin-left: -200px;
   overflow-y: auto;
-  background: #183050;
+  background: #384850;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
