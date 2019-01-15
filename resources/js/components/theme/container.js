@@ -17,7 +17,7 @@ export class Container extends Component {
                 <SideBar />
                 <div id="page-content-wrapper">
                     <Btn openMenu={()=>{this.setState({wrap:this.state.wrap == 'toggled' ? '':'toggled'})}}/>
-                    <div style={{marginTop:54}}></div>
+                    
                     {
                         this.props.children
                     }

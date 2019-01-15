@@ -10,6 +10,9 @@ header.head{
     display: flex;
     margin-bottom: 15.3px;
 }
+.sp-bi{
+    justify-content: space-between !important;
+}
 .head-footer{
     display: flex;
     align-self: flex-end;
