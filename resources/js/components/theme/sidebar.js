@@ -19,13 +19,13 @@ export class SideBar extends Component {
         this.user = User.local();
         this.state = {
             side:[
-                {to:'/cli',icon:'ti-rss-alt',title:'Feed'},
-                {to:'/cli/curriculo/'+this.user.id, icon:'ti-user', title:'Perfil'},
-                {to:'/cli/chat', icon:'ti-comments', title:'Chat'},
-                {to:'/cli/historico', icon:'ti-agenda', title:'Histórico'},
-                {to:'/cli/busca', icon:'ti-search', title:'Buscar'},
-                {to:'/cli/jobs', icon:'ti-bag', title:'Serviços'},
-                {to:'/cli/diligencia', icon:'ti-marker-alt', title:'Lançar Demanda'}
+                {to:'/',icon:'ti-rss-alt',title:'Feed'},
+                {to:'/me', icon:'ti-user', title:'Perfil'},
+                {to:'/chat', icon:'ti-comments', title:'Chat'},
+                {to:'/historico', icon:'ti-agenda', title:'Histórico'},
+                {to:'/busca', icon:'ti-search', title:'Buscar'},
+                {to:'/jobs', icon:'ti-bag', title:'Serviços'},
+                {to:'/diligencia', icon:'ti-marker-alt', title:'Lançar Demanda'}
             ]
         }
     }

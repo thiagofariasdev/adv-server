@@ -7,14 +7,14 @@ export default class Nav extends Component {
         return (
             <Router>
                 <Switch>
-                    <Route exact path="/cli" component={Components.Home}/>
-                    <Route path="/cli/curriculo/:id" component={Components.ViewProfile}/>
-                    <Route path="/cli/me" component={Components.ViewProfile}/>
-                    <Route path="/cli/chat" component={Components.Chat}/>
-                    <Route path="/cli/historico" component={Components.History}/>
-                    <Route path="/cli/busca" component={Components.SearchAll}/>
-                    <Route path="/cli/jobs" component={Components.Jobs}/>
-                    <Route path="/cli/diligencia" component={Components.CreateDemand}/>
+                    <Route exact path="/" component={Components.Home}/>
+                    <Route path="/curriculo/:id" component={Components.ViewProfile}/>
+                    <Route path="/me" component={Components.ViewProfile}/>
+                    <Route path="/chat" component={Components.Chat}/>
+                    <Route path="/historico" component={Components.History}/>
+                    <Route path="/busca" component={Components.SearchAll}/>
+                    <Route path="/jobs" component={Components.Jobs}/>
+                    <Route path="/diligencia" component={Components.CreateDemand}/>
                 </Switch>
             </Router>
         )
