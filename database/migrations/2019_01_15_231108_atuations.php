@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Occupations extends Migration
+class Atuations extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,11 @@ class Occupations extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('atuations', function (Blueprint $table) {
+            $table->increments('id');
+            $table->char('name', 100);
+            $table->timestamps();
+        });
     }
 
     /**

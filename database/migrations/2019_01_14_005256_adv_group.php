@@ -13,7 +13,11 @@ class AdvGroup extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('adv_groups', function (Blueprint $table) {
+            $table->increments('id');
+            $table->char('name', 100);
+            $table->timestamps();
+        });
     }
 
     /**

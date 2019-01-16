@@ -16,8 +16,7 @@ class UserLocation extends Migration
         Schema::create('user_location', function(Blueprint $table){
             $table->increments('id');
             $table->unsignedInteger('user_id');
-            $table->geometry('pt');
-            $table->timestamps();
+            $table->point('pt');
             $table
                 ->foreign('user_id')
                 ->references('id')

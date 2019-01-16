@@ -10,7 +10,7 @@ class Demands extends Migration
      * Run the migrations.
      * 
      * CREATE TABLE demands
-     * id | owner | servant | title | description | req_formations | req_titulations | req_occupations | 
+     * id | owner | servant | title | description | req_formations | req_titulations |
      * @return void
      */
     public function up()
@@ -21,7 +21,9 @@ class Demands extends Migration
             $table->unsignedInteger('servant');
             $table->string('title', 100);
             $table->text('description');
-            $table->string('req_formations');
+            $table->timestamps();
+            $table->foreign('owner')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('servant')->references('id')->on('users');
         });
     }
 
@@ -32,6 +34,6 @@ class Demands extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('demands');
     }
 }

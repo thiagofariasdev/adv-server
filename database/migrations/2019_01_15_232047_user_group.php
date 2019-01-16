@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUserValidationsTable extends Migration
+class UserGroup extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,12 @@ class CreateUserValidationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_validations', function (Blueprint $table) {
+        Schema::create('user_group', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('user_id');
-            $table->string('timed_token', 60);
-            $table->string('password', 20);
-            $table->foreign('user_id')
-                ->references('id')
-                ->on('users')
-                ->onDelete('cascade');
+            $table->unsignedInteger('group_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('group_id')->references('id')->on('adv_groups');
         });
     }
 
@@ -32,6 +29,6 @@ class CreateUserValidationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_validations');
+        Schema::dropIfExists('user_group');
     }
 }
