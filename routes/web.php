@@ -29,3 +29,4 @@ Route::get('/validation', 'UserController@validateEmail');
 Route::get('/color', function(){
     return view('theme.color');
 });
+Route::get('/test', 'PositionController@index');
