@@ -19,7 +19,7 @@ export class SideBar extends Component {
         this.user = User.local();
         this.state = {
             side:[
-                {to:'/',icon:'ti-rss-alt',title:'Feed'},
+                {to:'/home',icon:'ti-rss-alt',title:'Feed'},
                 {to:'/me', icon:'ti-user', title:'Perfil'},
                 {to:'/chat', icon:'ti-comments', title:'Chat'},
                 {to:'/historico', icon:'ti-agenda', title:'Histórico'},

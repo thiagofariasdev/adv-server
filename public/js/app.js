@@ -48501,28 +48501,28 @@ function (_Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         exact: true,
-        path: "/cli",
+        path: "/home",
         component: _screens__WEBPACK_IMPORTED_MODULE_2__["Home"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        path: "/cli/curriculo/:id",
+        path: "/curriculo/:id",
         component: _screens__WEBPACK_IMPORTED_MODULE_2__["ViewProfile"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        path: "/cli/me",
+        path: "/me",
         component: _screens__WEBPACK_IMPORTED_MODULE_2__["ViewProfile"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        path: "/cli/chat",
+        path: "/chat",
         component: _screens__WEBPACK_IMPORTED_MODULE_2__["Chat"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        path: "/cli/historico",
+        path: "/historico",
         component: _screens__WEBPACK_IMPORTED_MODULE_2__["History"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        path: "/cli/busca",
+        path: "/busca",
         component: _screens__WEBPACK_IMPORTED_MODULE_2__["SearchAll"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        path: "/cli/jobs",
+        path: "/jobs",
         component: _screens__WEBPACK_IMPORTED_MODULE_2__["Jobs"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        path: "/cli/diligencia",
+        path: "/diligencia",
         component: _screens__WEBPACK_IMPORTED_MODULE_2__["CreateDemand"]
       })));
     }
@@ -48887,6 +48887,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _theme_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../theme/header */ "./resources/js/components/theme/header.js");
 /* harmony import */ var _theme_container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../theme/container */ "./resources/js/components/theme/container.js");
+/* harmony import */ var _lib_User__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../lib/User */ "./resources/js/components/lib/User.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -48908,22 +48909,27 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var ViewProfile =
 /*#__PURE__*/
 function (_Component) {
   _inherits(ViewProfile, _Component);
 
-  function ViewProfile() {
+  function ViewProfile(props) {
+    var _this;
+
     _classCallCheck(this, ViewProfile);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(ViewProfile).apply(this, arguments));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(ViewProfile).call(this, props));
+    _this.user = _lib_User__WEBPACK_IMPORTED_MODULE_3__["User"].local();
+    return _this;
   }
 
   _createClass(ViewProfile, [{
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_theme_container__WEBPACK_IMPORTED_MODULE_2__["Container"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_theme_header__WEBPACK_IMPORTED_MODULE_1__["Header"], {
-        uid: this.props.match.params.id
+        uid: this.props.match.params.id ? this.props.match.params.id : this.user.id
       }));
     }
   }]);
@@ -49366,7 +49372,7 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
         className: "navbar navbar-expand-sm fixed-top navbar-light bg-adv sp-bi"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/cli"
+        to: "/home"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "https://via.placeholder.com/150x30"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
@@ -49544,7 +49550,7 @@ function (_Component) {
             maxHeight: 74
           }
         })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-          to: "/cli",
+          to: "/home",
           className: "lnk-center"
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, this.user.name)))));
       } else {
@@ -49569,7 +49575,7 @@ function (_Component) {
             maxHeight: 74
           }
         })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-          to: "/cli",
+          to: "/home",
           className: "lnk-center"
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
           src: "https://via.placeholder.com/80x10?text=+"
@@ -49666,31 +49672,31 @@ function (_Component2) {
     _this.user = _lib_User__WEBPACK_IMPORTED_MODULE_2__["User"].local();
     _this.state = {
       side: [{
-        to: '/cli',
+        to: '/home',
         icon: 'ti-rss-alt',
         title: 'Feed'
       }, {
-        to: '/cli/curriculo/' + _this.user.id,
+        to: '/me',
         icon: 'ti-user',
         title: 'Perfil'
       }, {
-        to: '/cli/chat',
+        to: '/chat',
         icon: 'ti-comments',
         title: 'Chat'
       }, {
-        to: '/cli/historico',
+        to: '/historico',
         icon: 'ti-agenda',
         title: 'Histórico'
       }, {
-        to: '/cli/busca',
+        to: '/busca',
         icon: 'ti-search',
         title: 'Buscar'
       }, {
-        to: '/cli/jobs',
+        to: '/jobs',
         icon: 'ti-bag',
         title: 'Serviços'
       }, {
-        to: '/cli/diligencia',
+        to: '/diligencia',
         icon: 'ti-marker-alt',
         title: 'Lançar Demanda'
       }]

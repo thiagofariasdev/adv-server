@@ -7,7 +7,7 @@ export default class Nav extends Component {
         return (
             <Router>
                 <Switch>
-                    <Route exact path="/" component={Components.Home}/>
+                    <Route exact path="/home" component={Components.Home}/>
                     <Route path="/curriculo/:id" component={Components.ViewProfile}/>
                     <Route path="/me" component={Components.ViewProfile}/>
                     <Route path="/chat" component={Components.Chat}/>

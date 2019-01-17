@@ -37,7 +37,7 @@ export class Header extends Component {
                                     style={{maxHeight:74}}
                                 />
                             </div>
-                            <Link to="/cli" className="lnk-center">
+                            <Link to="/home" className="lnk-center">
                                 <span>{this.user.name}</span>
                             </Link>
                         </div>
@@ -56,7 +56,7 @@ export class Header extends Component {
                                     style={{maxHeight:74}}
                                 />
                             </div>
-                            <Link to="/cli" className="lnk-center">
+                            <Link to="/home" className="lnk-center">
                                 <span><img src="https://via.placeholder.com/80x10?text=+"/></span>
                             </Link>
                         </div>

@@ -21,7 +21,7 @@
                 password:'{{$password}}'
             },
             success:res=>{
-                location.replace('/cli');
+                location.replace('/');
             }
         })
     </script>

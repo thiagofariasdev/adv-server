@@ -6,7 +6,7 @@ export class Btn extends Component {
         return (
             <nav className="navbar navbar-expand-sm fixed-top navbar-light bg-adv sp-bi">
                 <div>
-                    <Link to="/cli"><img src="https://via.placeholder.com/150x30"/></Link>
+                    <Link to="/home"><img src="https://via.placeholder.com/150x30"/></Link>
                     <button className="btn bg-transparent text-white" onClick={this.props.openMenu}>
                         <i className="fas fa-bars"></i>
                     </button>

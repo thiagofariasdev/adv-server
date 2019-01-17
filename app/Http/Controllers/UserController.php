@@ -59,6 +59,6 @@ class UserController extends Controller
         ]);
         Auth::logout();
         echo '<script>window.localStorage.clear()</script>';
-        return redirect('/login');
+        return redirect('/');
     }
 }

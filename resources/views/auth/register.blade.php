@@ -102,7 +102,4 @@
             </div>
         </div>
     </section>
-    <script>
-        document.title = 'My ADV | Login';
-    </script>
 @endsection
