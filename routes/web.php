@@ -10,9 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-
-
 Route::group(['middleware'=>['web']], function(){
     Route::get('/home', 'HomeController@index');
     Route::get('/curriculo/{id?}', 'HomeController@index');
