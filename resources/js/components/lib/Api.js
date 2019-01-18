@@ -1,7 +1,9 @@
+import { User } from "./User";
+
 export class Api {
     static async get(endpoint, opt = {})
     {
-        this.token = User.hasUser().api_token;
+        this.token = User.local().api_token;
         opt['Accept'] = 'application/json',
         opt['Content-Type'] = 'application/json'
         opt['Authorization'] = 'Bearer ' + this.token;
@@ -17,7 +19,7 @@ export class Api {
     }
     static async post(endpoint, data = {}, opt = {})
     {
-        this.token = User.hasUser().api_token;
+        this.token = User.local().api_token;
         opt['Accept'] = 'application/json',
         opt['Content-Type'] = 'application/json';
         opt['Authorization'] = 'Bearer ' + this.token;

@@ -17,4 +17,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 Route::group(['middleware'=>'auth:api'], function(){
     Route::post('/set_position', 'PositionController@set');
+    Route::get('/position', 'PositionController@get');
 });

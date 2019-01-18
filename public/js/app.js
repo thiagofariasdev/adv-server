@@ -54765,12 +54765,25 @@ function (_Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MapContaienr", function() { return MapContaienr; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Maps", function() { return Maps; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _theme_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../theme/container */ "./resources/js/components/theme/container.js");
-/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! google-maps-react */ "./node_modules/google-maps-react/dist/index.js");
-/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(google_maps_react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _theme_container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../theme/container */ "./resources/js/components/theme/container.js");
+/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! google-maps-react */ "./node_modules/google-maps-react/dist/index.js");
+/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(google_maps_react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _lib_Api__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../lib/Api */ "./resources/js/components/lib/Api.js");
+
+
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -54791,41 +54804,87 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var MapContaienr =
 /*#__PURE__*/
 function (_Component) {
   _inherits(MapContaienr, _Component);
 
-  function MapContaienr() {
+  function MapContaienr(props) {
+    var _this;
+
     _classCallCheck(this, MapContaienr);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(MapContaienr).apply(this, arguments));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(MapContaienr).call(this, props));
+    _this.state = {
+      location: {
+        lat: 0,
+        lng: 0
+      }
+    };
+    return _this;
   }
 
   _createClass(MapContaienr, [{
+    key: "componentWillMount",
+    value: function () {
+      var _componentWillMount = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var req;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return _lib_Api__WEBPACK_IMPORTED_MODULE_4__["Api"].get('/api/position');
+
+              case 2:
+                req = _context.sent;
+                this.setState({
+                  location: _objectSpread({}, req.data)
+                });
+                google_maps_react__WEBPACK_IMPORTED_MODULE_3__["Map"].panTo({
+                  lat: req.data.lat,
+                  lng: req.data.lng
+                });
+
+              case 5:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function componentWillMount() {
+        return _componentWillMount.apply(this, arguments);
+      }
+
+      return componentWillMount;
+    }()
+  }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_2__["Map"], {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_3__["Map"], {
         google: this.props.google,
         zoom: 14,
         centerAroundCurrentLocation: true,
         className: 'maps',
         initialCenter: {
           lat: -21,
-          lng: -52
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_2__["Marker"], {
-        position: {
-          lat: -21,
           lng: -51
-        }
+        },
+        center: this.state.location
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_3__["Marker"], {
+        position: this.state.location
       }));
     }
   }]);
 
   return MapContaienr;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-var I = Object(google_maps_react__WEBPACK_IMPORTED_MODULE_2__["GoogleApiWrapper"])({
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+var I = Object(google_maps_react__WEBPACK_IMPORTED_MODULE_3__["GoogleApiWrapper"])({
   apiKey: 'AIzaSyACwqx20ffIhqEjKYYxKBWHSEqP999_d1Y'
 })(MapContaienr);
 var Maps =
@@ -54842,12 +54901,12 @@ function (_Component2) {
   _createClass(Maps, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_theme_container__WEBPACK_IMPORTED_MODULE_1__["Container"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(I, null));
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_theme_container__WEBPACK_IMPORTED_MODULE_2__["Container"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(I, null));
     }
   }]);
 
   return Maps;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
 /***/ }),
 
@@ -54973,6 +55032,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Api", function() { return Api; });
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _User__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./User */ "./resources/js/components/lib/User.js");
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -54984,6 +55044,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
 
 var Api =
 /*#__PURE__*/
@@ -55005,7 +55066,7 @@ function () {
             switch (_context.prev = _context.next) {
               case 0:
                 opt = _args.length > 1 && _args[1] !== undefined ? _args[1] : {};
-                this.token = User.hasUser().api_token;
+                this.token = _User__WEBPACK_IMPORTED_MODULE_1__["User"].local().api_token;
                 opt['Accept'] = 'application/json', opt['Content-Type'] = 'application/json';
                 opt['Authorization'] = 'Bearer ' + this.token;
                 return _context.abrupt("return", new Promise(function (resolve) {
@@ -55050,7 +55111,7 @@ function () {
               case 0:
                 data = _args2.length > 1 && _args2[1] !== undefined ? _args2[1] : {};
                 opt = _args2.length > 2 && _args2[2] !== undefined ? _args2[2] : {};
-                this.token = User.hasUser().api_token;
+                this.token = _User__WEBPACK_IMPORTED_MODULE_1__["User"].local().api_token;
                 opt['Accept'] = 'application/json', opt['Content-Type'] = 'application/json';
                 opt['Authorization'] = 'Bearer ' + this.token;
                 return _context2.abrupt("return", new Promise(function (resolve) {

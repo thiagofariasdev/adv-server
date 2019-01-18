@@ -16,7 +16,8 @@ class PositionController extends Controller
     {
         $local = Auth::user()->location;
         $point = $local[0]->pt;
-        $pointSelect = Position::distance('pt', new Point(56.00999, -21.52345), 60000)->get();
+        $distance = 50000; // in meters
+        $pointSelect = Position::distanceExcludingSelf('pt', new Point(56.00999, -21.52345), $distance)->get();
         echo $pointSelect;
     }
     public function set(Request $req)
@@ -35,5 +36,10 @@ class PositionController extends Controller
                 'pt' => new Point($lat, $lon)
             ]);
         }
+    }
+    public function get()
+    {
+        $loc = Auth::user()->location[0];
+        return ['lat'=> $loc->pt->getLat(),'lng'=>$loc->pt->getLng()];
     }
 }
