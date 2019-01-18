@@ -15,6 +15,7 @@ export default class Nav extends Component {
                     <Route path="/busca" component={Components.SearchAll}/>
                     <Route path="/jobs" component={Components.Jobs}/>
                     <Route path="/diligencia" component={Components.CreateDemand}/>
+                    <Route path="/mapa" component={Components.Maps}/>
                 </Switch>
             </Router>
         )

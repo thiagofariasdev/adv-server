@@ -22,12 +22,33 @@ Route::group(['middleware'=>['web']], function(){
     Route::get('/busca', 'HomeController@index');
     Route::get('/jobs', 'HomeController@index');
     Route::get('/diligencia', 'HomeController@index');
+    Route::get('/mapa', 'HomeController@index');
     Route::get('/logout', 'UserController@logout');
 });
-Route::get('/', function(){return view('index');});
-Route::get('/auth', function(){return view('auth.register');});
-Route::get('login', ['as'=>'login', 'uses'=>function(){return view('auth.register');}]);
-Route::get('register', ['as'=>'register', 'uses'=>function(){return view('auth.register');}]);
+Route::get('/', function(){
+    if(Auth::check())
+        return redirect('/home');
+    else 
+        return view('index');
+});
+Route::get('/auth', function(){
+    if(Auth::check())
+        return redirect('/home');
+    else 
+        return view('auth.register');
+});
+Route::get('login', ['as'=>'login', 'uses'=>function(){
+    if(Auth::check())
+        return redirect('/home');
+    else 
+        return view('auth.register');
+}]);
+Route::get('register', ['as'=>'register', 'uses'=>function(){
+    if(Auth::check())
+        return redirect('/home');
+    else 
+        return view('auth.register');
+}]);
 Route::post('/user_register', 'UserController@register');
 Route::post('/login', 'Auth\LoginController@login');
 Route::get('/validation', 'UserController@validateEmail');

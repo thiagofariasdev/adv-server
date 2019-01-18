@@ -16,16 +16,24 @@ class PositionController extends Controller
     {
         $local = Auth::user()->location;
         $point = $local[0]->pt;
-        $pointSelect = Position::distanceSphereExcludingSelf('pt', new Point(56.00999, -21.52345), 60000)->get();
+        $pointSelect = Position::distance('pt', new Point(56.00999, -21.52345), 60000)->get();
         echo $pointSelect;
     }
     public function set(Request $req)
     {
         $lat = $req['lat'];
         $lon = $req['lon'];
-        $pos = new Position();
-        $pos->user_id = 1;
-        $pos->pt =new Point($lat, $lon);
-        $pos->save();
+        $id  = $req['id'];
+        $user = Position::where('user_id', $id)->exists();
+        if(!$user){
+            $pos = new Position();
+            $pos->user_id = $id;
+            $pos->pt = new Point($lat, $lon);
+            $pos->save();
+        }else{
+            Position::where('user_id', $id)->update([
+                'pt' => new Point($lat, $lon)
+            ]);
+        }
     }
 }

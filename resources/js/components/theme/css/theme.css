@@ -45,3 +45,10 @@ a.lnk-center:hover{
 #contentPage{
     padding: 0 20px;
 }
+/* .maps{
+    height: 100vh;
+    width: 100vw;
+} */
+#page-content-wrapper{
+    height: 93.2vh;
+}
