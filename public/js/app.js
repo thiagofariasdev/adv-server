@@ -2546,6 +2546,25 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/theme/css/chat.css":
+/*!************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/theme/css/chat.css ***!
+  \************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".user-chat-photo{\r\n    max-width: 40px;\r\n}\r\n.user-chat-name{\r\n    font-weight: 500;\r\n    padding-left: 10px;\r\n    white-space: nowrap;\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n    max-width: 200px;\r\n}\r\np.last-message{\r\n    font-size: 10px;\r\n    padding-left: 10px;\r\n    white-space: nowrap;\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n    max-width: 100px;\r\n}\r\n.chat-view{\r\n    position: absolute;\r\n    top:0;\r\n    bottom:0;\r\n    right: 0;\r\n    left: 0;\r\n}\r\n.c-head{\r\n    min-height: 50px;\r\n    padding: 10px;\r\n    background-color: rgb(0, 102, 191);\r\n    color: #fff;\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n}\r\n.c-body{\r\n    background-color: #fff;\r\n    max-height: calc(100% - (60px + 38px));\r\n    min-height: calc(100% - (60px + 38px));\r\n    padding:10px;\r\n    overflow-y: auto;\r\n    overflow-x: hidden;\r\n}\r\n.c-foot{\r\n    height: 34px;\r\n}\r\n.c-point:hover{\r\n    cursor: pointer;\r\n    background-color: #3848509d;\r\n}\r\n.c-point.active{\r\n    background-color: #3848509d;\r\n}\r\n.w-message{\r\n    height: inherit;\r\n    width: 100%;\r\n    border: none;\r\n    box-shadow: none;\r\n    outline: none;\r\n    margin:0;\r\n    border-top:0.5px solid #3848509d;\r\n    resize: none;\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/theme/css/demand.css":
 /*!**************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/theme/css/demand.css ***!
@@ -2596,7 +2615,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".bg-light{\r\n    background-color: #eff3f9 !important;\r\n}\r\nheader.head{\r\n    height: 55vh;\r\n    width: 100%;\r\n    background-image: url(https://i.pinimg.com/564x/58/cb/a1/58cba1830e64889086e77e3a9a0e3920.jpg);\r\n    background-position: 50% 50%;\r\n    background-size: cover;\r\n    display: flex;\r\n    margin-bottom: 15.3px;\r\n}\r\n.sp-bi{\r\n    justify-content: space-between !important;\r\n}\r\n.head-footer{\r\n    display: flex;\r\n    align-self: flex-end;\r\n    flex-direction: row;\r\n    width: 100%;\r\n    background-color: white;\r\n    border: 1px solid #e0e0e0;\r\n    border-top: 0;\r\n}\r\na.lnk-center{\r\n    display:flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    text-decoration: none;\r\n    font-weight: 600;\r\n    color: #707880;\r\n    padding: 0 20px;\r\n}\r\na.lnk-center:hover{\r\n    color: #384850;\r\n}\r\n.head-img{\r\n    max-height: 80px;\r\n    max-width: 80px;\r\n    margin-top: -60px;\r\n    border: 3px solid #fff;\r\n    border-radius: 40px;\r\n    background-color: #fff;\r\n}\r\n#contentPage{\r\n    padding: 0 20px;\r\n}\r\n#page-content-wrapper{\r\n    height: 93.2vh;\r\n}\r\n.user-line{\r\n    display: flex;\r\n    flex-direction: row;\r\n}\r\n.bg-white{\r\n    background-color: #fff;\r\n}\r\n.h-px-50{\r\n    min-height: 50px;\r\n}\r\n.h-max{\r\n    max-height: 93.2vh;\r\n}\r\n.c-point:hover{\r\n    cursor: pointer;\r\n    background-color: #3848509d;\r\n}\r\n.flex-center{\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}", ""]);
+exports.push([module.i, ".bg-light{\r\n    background-color: #eff3f9 !important;\r\n}\r\nheader.head{\r\n    height: 55vh;\r\n    width: 100%;\r\n    background-image: url(https://i.pinimg.com/564x/58/cb/a1/58cba1830e64889086e77e3a9a0e3920.jpg);\r\n    background-position: 50% 50%;\r\n    background-size: cover;\r\n    display: flex;\r\n    margin-bottom: 15.3px;\r\n}\r\n.sp-bi{\r\n    justify-content: space-between !important;\r\n}\r\n.head-footer{\r\n    display: flex;\r\n    align-self: flex-end;\r\n    flex-direction: row;\r\n    width: 100%;\r\n    background-color: white;\r\n    border: 1px solid #e0e0e0;\r\n    border-top: 0;\r\n}\r\na.lnk-center{\r\n    display:flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    text-decoration: none;\r\n    font-weight: 600;\r\n    color: #707880;\r\n    padding: 0 20px;\r\n}\r\na.lnk-center:hover{\r\n    color: #384850;\r\n}\r\n.head-img{\r\n    max-height: 80px;\r\n    max-width: 80px;\r\n    margin-top: -60px;\r\n    border: 3px solid #fff;\r\n    border-radius: 40px;\r\n    background-color: #fff;\r\n}\r\n#contentPage{\r\n    padding: 0 20px;\r\n}\r\n#page-content-wrapper{\r\n    height: 93.2vh;\r\n}\r\n.user-line{\r\n    display: flex;\r\n    flex-direction: row;\r\n}\r\n.bg-white{\r\n    background-color: #fff;\r\n}\r\n.h-px-50{\r\n    min-height: 50px;\r\n}\r\n.h-max{\r\n    max-height: 93.2vh;\r\n}\r\n.flex-center{\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n.flex-row{\r\n    display: flex;\r\n    flex-direction: row;\r\n}\r\n.max-h{\r\n    max-height: 100%;\r\n    overflow: auto;\r\n}\r\n.no-x-overflow{\r\n    overflow-x: hidden;\r\n}\r\n.relative{\r\n    position: relative;\r\n}", ""]);
 
 // exports
 
@@ -54448,6 +54467,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _theme_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../theme/container */ "./resources/js/components/theme/container.js");
+/* harmony import */ var _theme_css_chat_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../theme/css/chat.css */ "./resources/js/components/theme/css/chat.css");
+/* harmony import */ var _theme_css_chat_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_theme_css_chat_css__WEBPACK_IMPORTED_MODULE_2__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -54468,39 +54489,157 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var Chat =
+
+
+var ChatView =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(Chat, _Component);
+  _inherits(ChatView, _Component);
+
+  function ChatView() {
+    _classCallCheck(this, ChatView);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(ChatView).apply(this, arguments));
+  }
+
+  _createClass(ChatView, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "chat-view",
+        style: {
+          display: this.props.show == true ? 'flex' : 'none'
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: {
+          height: '100%',
+          width: '100%'
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "c-head"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        height: "40",
+        src: "https://via.placeholder.com/300x300",
+        className: "rounded-circle"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+        style: {
+          paddingLeft: 10
+        }
+      }, "Nome do destinat\xE1rio")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "c-body"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "c-foot"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+        placeholder: "Escreva sua mensagem",
+        className: "w-message"
+      }))));
+    }
+  }]);
+
+  return ChatView;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+var ChatContainer =
+/*#__PURE__*/
+function (_Component2) {
+  _inherits(ChatContainer, _Component2);
+
+  function ChatContainer() {
+    _classCallCheck(this, ChatContainer);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(ChatContainer).apply(this, arguments));
+  }
+
+  _createClass(ChatContainer, [{
+    key: "render",
+    value: function render() {
+      var _this = this;
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        onClick: function onClick() {
+          return _this.props.openChat(_this.props.id);
+        },
+        className: "h-px-50 p-1 c-point flex-row " + (this.props.active == true ? 'active' : '')
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "user-chat-photo"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "rounded-circle img-fluid",
+        src: this.props.img
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "user-chat-name"
+      }, this.props.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "last-message"
+      }, this.props.msg)));
+    }
+  }]);
+
+  return ChatContainer;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+var Chat =
+/*#__PURE__*/
+function (_Component3) {
+  _inherits(Chat, _Component3);
 
   function Chat(props) {
-    var _this;
+    var _this2;
 
     _classCallCheck(this, Chat);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(Chat).call(this, props));
-    _this.state = {
-      chats: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    _this2 = _possibleConstructorReturn(this, _getPrototypeOf(Chat).call(this, props));
+    _this2.state = {
+      chats: [{
+        id: 1
+      }, {
+        id: 2
+      }, {
+        id: 3
+      }, {
+        id: 4
+      }, {
+        id: 5
+      }],
+      chat_id: 0,
+      open: false
     };
-    return _this;
+    return _this2;
   }
 
   _createClass(Chat, [{
+    key: "openChat",
+    value: function openChat(e) {
+      this.setState({
+        open: true,
+        chat_id: e
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
+      var _this3 = this;
+
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_theme_container__WEBPACK_IMPORTED_MODULE_1__["Container"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row h-100"
+        className: "row h-100",
+        style: {
+          padding: 0,
+          margin: 0
+        }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-3 bg-white h-100 pr-0"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.state.chats.map(function (i, id) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "h-px-50 p-1 c-point"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-          src: "https://via.placeholder.com/200x200",
-          height: "40"
-        })));
+        className: "col-md-3 bg-white h-100 pr-0 pl-0"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "max-h no-x-overflow"
+      }, this.state.chats.map(function (i, id) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ChatContainer, {
+          id: i.id,
+          key: id,
+          active: _this3.state.chat_id == i.id,
+          openChat: _this3.openChat.bind(_this3),
+          name: 'User name',
+          msg: 'Last message',
+          img: 'https://via.placeholder.com/300x300'
+        });
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-9 pl-0 h-max"
+        className: "col-md-9 pl-0 h-max relative pr-0"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "h-100 w-100 flex-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -54509,7 +54648,10 @@ function (_Component) {
           maxWidth: 300
         },
         src: "/svg/libra_chat.svg"
-      })))));
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ChatView, {
+        show: this.state.open ? true : false,
+        id: this.state.chat_id
+      }))));
     }
   }]);
 
@@ -55526,6 +55668,36 @@ function (_Component) {
 
   return Container;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/***/ }),
+
+/***/ "./resources/js/components/theme/css/chat.css":
+/*!****************************************************!*\
+  !*** ./resources/js/components/theme/css/chat.css ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--6-1!../../../../../node_modules/postcss-loader/src??ref--6-2!./chat.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/theme/css/chat.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 

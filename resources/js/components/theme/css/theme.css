@@ -61,12 +61,22 @@ a.lnk-center:hover{
 .h-max{
     max-height: 93.2vh;
 }
-.c-point:hover{
-    cursor: pointer;
-    background-color: #3848509d;
-}
 .flex-center{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.max-h{
+    max-height: 100%;
+    overflow: auto;
+}
+.no-x-overflow{
+    overflow-x: hidden;
+}
+.relative{
+    position: relative;
 }
