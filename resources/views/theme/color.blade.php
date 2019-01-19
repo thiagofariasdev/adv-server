@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div style="height: 100px; width: 100px; background-color:#183050"></div>
+    <div style="height: 100px; width: 100px; background-color:#00447F"></div>
     <div style="height: 100px; width: 100px; background-color:#283858"></div>
     <div style="height: 100px; width: 100px; background-color:#384850"></div>
     <div style="height: 100px; width: 100px; background-color:#707880"></div>

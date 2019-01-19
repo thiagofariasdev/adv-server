@@ -27,13 +27,15 @@ export class MapContaienr extends Component {
             >
                 <Marker
                     position={this.state.location}
+                    title='Seu local'
+                    label="Você"
                 />
             </Map>
         )
     }
 }
 
-let I = GoogleApiWrapper({
+let Mapa = GoogleApiWrapper({
     apiKey: ('AIzaSyACwqx20ffIhqEjKYYxKBWHSEqP999_d1Y')
 })(MapContaienr);
 
@@ -41,7 +43,7 @@ export class Maps extends Component {
     render() {
         return (
             <Container>
-                <I/>
+                <Mapa/>
             </Container>
         )
     }

@@ -1,0 +1,31 @@
+.demand{
+    background-color: #f7f8f8;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.demand>div.head{
+    padding:5px;
+    background-color: #00447F;
+    color: #fff;
+}
+.demand>div.body{
+    padding:10px;
+}
+.demand>div.tags{
+    padding:2px;
+    border-bottom: 1px solid #000;
+}
+.demand>div.tags>a{
+    text-decoration: none
+}
+.no-dec-white{
+    text-decoration: none;
+    color: #fff;
+}
+.no-dec-white:hover{
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+}
+.demand>div.body>h4{
+    font-size: calc(15px + 1vw)
+}

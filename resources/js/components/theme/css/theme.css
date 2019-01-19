@@ -45,10 +45,28 @@ a.lnk-center:hover{
 #contentPage{
     padding: 0 20px;
 }
-/* .maps{
-    height: 100vh;
-    width: 100vw;
-} */
 #page-content-wrapper{
     height: 93.2vh;
+}
+.user-line{
+    display: flex;
+    flex-direction: row;
+}
+.bg-white{
+    background-color: #fff;
+}
+.h-px-50{
+    min-height: 50px;
+}
+.h-max{
+    max-height: 93.2vh;
+}
+.c-point:hover{
+    cursor: pointer;
+    background-color: #3848509d;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

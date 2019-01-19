@@ -5,10 +5,9 @@ export class Btn extends Component {
     render() {
         return (
             <nav 
-                className="navbar navbar-expand-sm fixed-top navbar-light bg-dark sp-bi" 
-                style={{padding:2}}
+                className="navbar navbar-expand-sm fixed-top navbar-light bg-adv sp-bi" style={{padding:0}}
             >
-                <div>
+                <div className="bg-adv" style={{padding:2}}>
                     <Link to="/home"><img src="https://via.placeholder.com/150x30"/></Link>
                     <button className="btn bg-transparent text-white" onClick={this.props.openMenu}>
                         <i className="fas fa-bars"></i>
