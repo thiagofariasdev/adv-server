@@ -4,7 +4,7 @@
 @section('title', __('Serviço indisponível'))
 
 @section('image')   
-    <div style="background-image: url({{ asset('/svg/error_505.svg') }});">
+    <div style="background-image: url({{ asset('/svg/error_500.svg') }});">
     </div>
 @endsection
 

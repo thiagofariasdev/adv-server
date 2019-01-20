@@ -1,11 +1,10 @@
-@extends('errors::illustrated-layout')
+@extends('errors::layout')
 
 @section('code', '401')
-@section('title', __('Unauthorized'))
+@section('title', __('Não autorizado'))
 
 @section('image')
-    <div style="background-image: url({{ asset('/svg/403.svg') }});" class="absolute pin bg-cover bg-no-repeat md:bg-left lg:bg-center">
-    </div>
+    <img src="{{ asset('/svg/error_419.svg') }}"/>
 @endsection
 
-@section('message', __('Sorry, you are not authorized to access this page.'))
+@section('message', __('Você não tem permissão para acessar essa página.'))

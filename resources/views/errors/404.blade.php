@@ -4,8 +4,7 @@
 @section('title', __('Página não encontrada'))
 
 @section('image')
-    <div style="background-image: url({{ asset('/svg/error_404.svg') }});" class="full-bg">
-    </div>
+    <img src="{{ asset('/svg/error_404.svg') }}" class="img-fluid"/>
 @endsection
 
 @section('message', __('Desculpa, essa página não foi encontrada.'))

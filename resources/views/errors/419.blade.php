@@ -1,11 +1,10 @@
-@extends('errors::illustrated-layout')
+@extends('errors::layout')
 
 @section('code', '419')
 @section('title', __('Ops!'))
 
 @section('image')
-    <div style="background-image: url({{ asset('/svg/403.svg') }});" class="absolute pin bg-cover bg-no-repeat md:bg-left lg:bg-center">
-    </div>
+    <img src="{{ asset('/svg/error_419.svg') }}" class="img-fluid"/>
 @endsection
 
 @section('message', __('Desculpa, sua sessão terminou.'))

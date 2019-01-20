@@ -21,31 +21,30 @@
         .card-center{
             width: 600px;
             max-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
-        .full-bg{
-            height:100%; 
-            width:100%;
+        .full-bg{ 
+            width:40vw;
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
         }
         .text{
             font-family: 'Dosis', sans-serif;
-            text-align:center;
         }
         .title{
             font-family: 'Varela Round', sans-serif;
             font-size: 9rem;
-            text-align:center;
         }
     </style>
 </head>
 <body class="full">
     <div class="card-center">
-        <div style="height:200px;width:100%">
-            @yield('image')
-        </div>
-        <div style="height:300px;width:100%;">
+        @yield('image')
+        <div style="height:300px;width:100%;display:flex;justify-content:center;align-items:center;flex-direction:column">
             <h1 class="title">@yield('code')</h1>
             <h3 class="text">@yield('message')</h3>
         </div>
