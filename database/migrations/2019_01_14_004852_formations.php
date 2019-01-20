@@ -16,7 +16,6 @@ class Formations extends Migration
         Schema::create('formations', function (Blueprint $table) {
             $table->increments('id');
             $table->char('name', 100);
-            $table->timestamps();
         });
     }
 

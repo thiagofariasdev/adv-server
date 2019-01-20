@@ -16,7 +16,6 @@ class Atuations extends Migration
         Schema::create('atuations', function (Blueprint $table) {
             $table->increments('id');
             $table->char('name', 100);
-            $table->timestamps();
         });
     }
 

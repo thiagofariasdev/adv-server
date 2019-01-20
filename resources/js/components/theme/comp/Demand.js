@@ -37,6 +37,7 @@ export class Demand extends Component {
                     <p>
                         Descrição da demanda vai aqui, deve conter um texto simples e resumido.
                     </p>
+                    <hr/>
                 </div>
             </div>
         )

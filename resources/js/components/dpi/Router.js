@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import * as Components from './screens';
+import * as Screens from './screens';
 
 export default class Nav extends Component {
     render() {
         return (
             <Router>
                 <Switch>
-                    <Route exact path="/home" component={Components.Home}/>
-                    <Route path="/curriculo/:id" component={Components.ViewProfile}/>
-                    <Route path="/me" component={Components.ViewProfile}/>
-                    <Route path="/chat" component={Components.Chat}/>
-                    <Route path="/historico" component={Components.History}/>
-                    <Route path="/busca" component={Components.SearchAll}/>
-                    <Route path="/jobs" component={Components.Jobs}/>
-                    <Route path="/diligencia" component={Components.CreateDemand}/>
-                    <Route path="/mapa" component={Components.Maps}/>
+                    <Route exact path="/home" component={Screens.Home}/>
+                    <Route path="/curriculo/:id" component={Screens.ViewProfile}/>
+                    <Route path="/me" component={Screens.ViewProfile}/>
+                    <Route path="/chat" component={Screens.Chat}/>
+                    <Route path="/historico" component={Screens.History}/>
+                    <Route path="/busca" component={Screens.SearchAll}/>
+                    <Route path="/jobs" component={Screens.Jobs}/>
+                    <Route path="/diligencia" component={Screens.CreateDemand}/>
+                    <Route path="/mapa" component={Screens.Maps}/>
                 </Switch>
             </Router>
         )

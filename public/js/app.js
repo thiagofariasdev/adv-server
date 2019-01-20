@@ -2615,7 +2615,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".bg-light{\r\n    background-color: #eff3f9 !important;\r\n}\r\nheader.head{\r\n    height: 55vh;\r\n    width: 100%;\r\n    background-image: url(https://i.pinimg.com/564x/58/cb/a1/58cba1830e64889086e77e3a9a0e3920.jpg);\r\n    background-position: 50% 50%;\r\n    background-size: cover;\r\n    display: flex;\r\n    margin-bottom: 15.3px;\r\n}\r\n.sp-bi{\r\n    justify-content: space-between !important;\r\n}\r\n.head-footer{\r\n    display: flex;\r\n    align-self: flex-end;\r\n    flex-direction: row;\r\n    width: 100%;\r\n    background-color: white;\r\n    border: 1px solid #e0e0e0;\r\n    border-top: 0;\r\n}\r\na.lnk-center{\r\n    display:flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    text-decoration: none;\r\n    font-weight: 600;\r\n    color: #707880;\r\n    padding: 0 20px;\r\n}\r\na.lnk-center:hover{\r\n    color: #384850;\r\n}\r\n.head-img{\r\n    max-height: 80px;\r\n    max-width: 80px;\r\n    margin-top: -60px;\r\n    border: 3px solid #fff;\r\n    border-radius: 40px;\r\n    background-color: #fff;\r\n}\r\n#contentPage{\r\n    padding: 0 20px;\r\n}\r\n#page-content-wrapper{\r\n    height: 93.2vh;\r\n}\r\n.user-line{\r\n    display: flex;\r\n    flex-direction: row;\r\n}\r\n.bg-white{\r\n    background-color: #fff;\r\n}\r\n.h-px-50{\r\n    min-height: 50px;\r\n}\r\n.h-max{\r\n    max-height: 93.2vh;\r\n}\r\n.flex-center{\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n.flex-row{\r\n    display: flex;\r\n    flex-direction: row;\r\n}\r\n.max-h{\r\n    max-height: 100%;\r\n    overflow: auto;\r\n}\r\n.no-x-overflow{\r\n    overflow-x: hidden;\r\n}\r\n.relative{\r\n    position: relative;\r\n}", ""]);
+exports.push([module.i, ".bg-light{\r\n    background-color: #eff3f9 !important;\r\n}\r\nheader.head{\r\n    height: 55vh;\r\n    width: 100%;\r\n    background-image: url(https://i.pinimg.com/564x/58/cb/a1/58cba1830e64889086e77e3a9a0e3920.jpg);\r\n    background-position: 50% 50%;\r\n    background-size: cover;\r\n    display: flex;\r\n    margin-bottom: 15.3px;\r\n}\r\n.sp-bi{\r\n    justify-content: space-between !important;\r\n}\r\n.head-footer{\r\n    display: flex;\r\n    align-self: flex-end;\r\n    flex-direction: row;\r\n    width: 100%;\r\n    background-color: white;\r\n    border: 1px solid #e0e0e0;\r\n    border-top: 0;\r\n}\r\na.lnk-center{\r\n    display:flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    text-decoration: none;\r\n    font-weight: 600;\r\n    color: #707880;\r\n    padding: 0 20px;\r\n}\r\na.lnk-center:hover{\r\n    color: #384850;\r\n}\r\n.head-img{\r\n    max-height: 80px;\r\n    max-width: 80px;\r\n    margin-top: -60px;\r\n    border: 3px solid #fff;\r\n    border-radius: 40px;\r\n    background-color: #fff;\r\n}\r\n#contentPage{\r\n    padding: 0 20px;\r\n}\r\n#page-content-wrapper{\r\n    min-height: 93.2vh;\r\n}\r\n.user-line{\r\n    display: flex;\r\n    flex-direction: row;\r\n}\r\n.bg-white{\r\n    background-color: #fff;\r\n}\r\n.h-px-50{\r\n    min-height: 50px;\r\n}\r\n.h-max{\r\n    min-height: 93.2vh;\r\n}\r\n.flex-center{\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n.flex-row{\r\n    display: flex;\r\n    flex-direction: row;\r\n}\r\n.max-h{\r\n    max-height: 100%;\r\n    overflow: auto;\r\n}\r\n.no-x-overflow{\r\n    overflow-x: hidden;\r\n}\r\n.relative{\r\n    position: relative;\r\n}", ""]);
 
 // exports
 
@@ -54598,6 +54598,16 @@ function (_Component3) {
         id: 4
       }, {
         id: 5
+      }, {
+        id: 5
+      }, {
+        id: 5
+      }, {
+        id: 5
+      }, {
+        id: 5
+      }, {
+        id: 5
       }],
       chat_id: 0,
       open: false
@@ -54619,13 +54629,13 @@ function (_Component3) {
       var _this3 = this;
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_theme_container__WEBPACK_IMPORTED_MODULE_1__["Container"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row h-100",
+        className: "row",
         style: {
           padding: 0,
           margin: 0
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-3 bg-white h-100 pr-0 pl-0"
+        className: "col-md-3 h-max bg-white h-100 pr-0 pl-0"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "max-h no-x-overflow"
       }, this.state.chats.map(function (i, id) {
@@ -54763,7 +54773,39 @@ function (_Component) {
   _createClass(SearchAll, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_theme_container__WEBPACK_IMPORTED_MODULE_1__["Container"], null);
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_theme_container__WEBPACK_IMPORTED_MODULE_1__["Container"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "p-2 bg-white"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        className: "sr-only",
+        for: "search"
+      }, "Buscar"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "input-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: {
+          borderRight: 'none'
+        },
+        className: "input-group-prepend"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: {
+          backgroundColor: '#fff',
+          borderRight: 'none'
+        },
+        className: "input-group-text"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "ti-search"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        style: {
+          borderLeft: 'none',
+          boxShadow: 'none',
+          outline: 'none'
+        },
+        type: "text",
+        className: "form-control",
+        id: "search",
+        placeholder: "Buscar"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "h-100 w-100"
+      })));
     }
   }]);
 
@@ -55506,7 +55548,7 @@ function (_Component) {
         }, "#atuation"), id == 2 && _this2.state.tags.length > 3 ? '...' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "\xA0"));
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "body"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Titulo da demanda"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Descri\xE7\xE3o da demanda vai aqui, deve conter um texto simples e resumido.")));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Titulo da demanda"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Descri\xE7\xE3o da demanda vai aqui, deve conter um texto simples e resumido."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null)));
     }
   }]);
 
@@ -55651,16 +55693,16 @@ function (_Component) {
         id: "wrapper",
         className: this.state.wrap
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sidebar__WEBPACK_IMPORTED_MODULE_3__["SideBar"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: {
+          height: 42
+        }
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "page-content-wrapper"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fixbtn__WEBPACK_IMPORTED_MODULE_4__["Btn"], {
         openMenu: function openMenu() {
           _this2.setState({
             wrap: _this2.state.wrap == 'toggled' ? '' : 'toggled'
           });
-        }
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: {
-          height: 42
         }
       }), this.props.children));
     }

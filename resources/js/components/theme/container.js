@@ -15,9 +15,9 @@ export class Container extends Component {
         return (
             <div id="wrapper" className={this.state.wrap}>
                 <SideBar />
+                <div style={{height:42}}></div>
                 <div id="page-content-wrapper">
-                    <Btn openMenu={()=>{this.setState({wrap:this.state.wrap == 'toggled' ? '':'toggled'})}}/>
-                    <div style={{height:42}}></div>
+                    <Btn openMenu={()=>{this.setState({wrap:this.state.wrap == 'toggled' ? '':'toggled'})}}/>    
                     {
                         this.props.children
                     }

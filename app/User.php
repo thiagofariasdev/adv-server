@@ -24,9 +24,21 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token', 
+        'password', 'remember_token', 'api_token', 'email_verified_at'
     ];
     public function location(){
         return $this->hasMany('App\Position');
-    } 
+    }
+    public function atuation()
+    {
+        return $this->hasMany('App\UserAtuation');
+    }
+    public function formation()
+    {
+        return $this->hasMany('App\UserFormation');
+    }
+    public function demand()
+    {
+        return $this->hasMany('App\Demand');
+    }
 }

@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Formations extends Model
+class ReqFormation extends Model
 {
-    protected $table = 'formations';
+    protected $table="demand_req_formation";
     public $timestamps = false;
 }

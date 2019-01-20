@@ -18,7 +18,7 @@ class Demands extends Migration
         Schema::create('demands', function(Blueprint $table){
             $table->increments('id');
             $table->unsignedInteger('owner');
-            $table->unsignedInteger('servant');
+            $table->unsignedInteger('servant')->nullable();
             $table->string('title', 100);
             $table->text('description');
             $table->timestamps();

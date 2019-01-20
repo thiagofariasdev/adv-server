@@ -46,7 +46,7 @@ a.lnk-center:hover{
     padding: 0 20px;
 }
 #page-content-wrapper{
-    height: 93.2vh;
+    min-height: 93.2vh;
 }
 .user-line{
     display: flex;
@@ -59,7 +59,7 @@ a.lnk-center:hover{
     min-height: 50px;
 }
 .h-max{
-    max-height: 93.2vh;
+    min-height: 93.2vh;
 }
 .flex-center{
     display: flex;

@@ -47,7 +47,7 @@ export class Chat extends Component {
     constructor(props){
         super(props);
         this.state = {
-            chats:[{id:1},{id:2},{id:3},{id:4},{id:5}],
+            chats:[{id:1},{id:2},{id:3},{id:4},{id:5},{id:5},{id:5},{id:5},{id:5},{id:5}],
             chat_id:0,
             open:false
         }
@@ -58,8 +58,8 @@ export class Chat extends Component {
     render() {
         return (
             <Container>
-                <div className="row h-100" style={{padding:0,margin:0}}>
-                    <div className="col-md-3 bg-white h-100 pr-0 pl-0">
+                <div className="row" style={{padding:0,margin:0}}>
+                    <div className="col-md-3 h-max bg-white h-100 pr-0 pl-0">
                         <div className="max-h no-x-overflow">
                             {
                                 this.state.chats.map((i, id)=>{
