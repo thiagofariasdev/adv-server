@@ -12,4 +12,8 @@ class ReqAtuation extends Model
     {
         return $this->hasMany('App\Atuations');
     }
+    public function demand()
+    {
+        return $this->belongsTo('App\Demand');
+    }
 }
