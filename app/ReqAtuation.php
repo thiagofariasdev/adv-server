@@ -13,4 +13,8 @@ class ReqAtuation extends Model
     {
         return $this->hasOne('App\Atuations', 'id', 'atuation_id');
     }
+    public function demand()
+    {
+        return $this->belongsTo('App\Demand');
+    }
 }
