@@ -8,8 +8,9 @@ class ReqAtuation extends Model
 {
     protected $table= 'demand_req_atuation';
     public $timestamps = false;
+    protected $hidden = ['demand_id', 'atuation_id'];
     public function atuation()
     {
-        return $this->hasMany('App\Atuations');
+        return $this->hasOne('App\Atuations', 'id', 'atuation_id');
     }
 }

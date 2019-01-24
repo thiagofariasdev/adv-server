@@ -4,7 +4,7 @@ export class User {
     static local(){
         var user = window.localStorage.getItem('user@jushub:data');
         user = user.replace(/&quot;/g, '"'); 
-          user = JSON.parse(user);
+        user = JSON.parse(user);
         if(user)
             return user;
         else 

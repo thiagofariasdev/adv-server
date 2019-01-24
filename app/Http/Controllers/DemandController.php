@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Demand;
+use DB;
 use App\ReqAtuation;
 use App\ReqFormation;
 use App\User;
@@ -13,10 +14,12 @@ class DemandController extends Controller
 {
     public function index()
     {
-        $demand = Demand::find(1);
-        $demand->user_owner = $demand->user_owner;
-        $demand->req_atuations = $demand->atuations;
-        return $demand;
+        $demands =  Demand::where('owner', '!=', Auth::user()->id)->get();
+        foreach($demands as $dem){
+            $dem->att();
+            $dem->forms();
+        }
+        return $demands;
     }
     public function create(Request $req)
     {
