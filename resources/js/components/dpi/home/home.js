@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Container } from './../../theme/container';
-import { Demand } from './../../theme/comp/Demand';
+import { Demand, ErrorScreen } from './../../theme/comp/exp.js';
 import { Api } from "./../../lib/Api";
 
 export class Home extends Component {
@@ -22,13 +22,18 @@ export class Home extends Component {
                     <div className="col-md-2"></div>
                         <div className="col-md-7">
                         {
-                            this.state.demands.length > 0 ?
+                            this.state.demands.length < 0 ?
                             this.state.demands.map((i, id)=>(
                                 <Demand
                                     {...i} 
                                     key={id}
                                 />
-                            )) : (<Error code='null'/>)
+                            )) : (
+                                <ErrorScreen 
+                                    code='null'
+                                    msg='Nenhuma demanda encontrada'
+                                    modal={true}
+                                />)
                         }
                         </div>
                     <div className="col-md-3"></div>

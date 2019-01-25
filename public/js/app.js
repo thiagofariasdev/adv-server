@@ -2584,6 +2584,25 @@ exports.push([module.i, ".demand{\r\n    background-color: #f7f8f8;\r\n    margi
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/theme/css/modal.css":
+/*!*************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/theme/css/modal.css ***!
+  \*************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".modal-container{\r\n    position: fixed;\r\n    overflow: hidden;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    background-color: rgba(0, 0, 0, 0.4);\r\n    z-index: 1040;\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/theme/css/sidebar.css":
 /*!***************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/theme/css/sidebar.css ***!
@@ -54885,7 +54904,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _theme_container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../theme/container */ "./resources/js/components/theme/container.js");
-/* harmony import */ var _theme_comp_Demand__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../theme/comp/Demand */ "./resources/js/components/theme/comp/Demand.js");
+/* harmony import */ var _theme_comp_exp_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../theme/comp/exp.js */ "./resources/js/components/theme/comp/exp.js");
 /* harmony import */ var _lib_Api__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../lib/Api */ "./resources/js/components/lib/Api.js");
 
 
@@ -54929,7 +54948,7 @@ function (_Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this, props));
     _this.state = {
-      demands: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      demands: []
     };
     return _this;
   }
@@ -54979,10 +54998,14 @@ function (_Component) {
         className: "col-md-2"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "col-md-7"
-      }, this.state.demands.map(function (i, id) {
-        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_theme_comp_Demand__WEBPACK_IMPORTED_MODULE_3__["Demand"], _extends({}, i, {
+      }, this.state.demands.length < 0 ? this.state.demands.map(function (i, id) {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_theme_comp_exp_js__WEBPACK_IMPORTED_MODULE_3__["Demand"], _extends({}, i, {
           key: id
         }));
+      }) : react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_theme_comp_exp_js__WEBPACK_IMPORTED_MODULE_3__["ErrorScreen"], {
+        code: "null",
+        msg: "Nenhuma demanda encontrada",
+        modal: true
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "col-md-3"
       })));
@@ -55604,6 +55627,81 @@ function (_Component) {
 
 /***/ }),
 
+/***/ "./resources/js/components/theme/comp/Error.js":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/theme/comp/Error.js ***!
+  \*****************************************************/
+/*! exports provided: ErrorScreen */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ErrorScreen", function() { return ErrorScreen; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_modal_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../css/modal.css */ "./resources/js/components/theme/css/modal.css");
+/* harmony import */ var _css_modal_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_modal_css__WEBPACK_IMPORTED_MODULE_1__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var ErrorScreen =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(ErrorScreen, _Component);
+
+  function ErrorScreen(props) {
+    var _this;
+
+    _classCallCheck(this, ErrorScreen);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(ErrorScreen).call(this, props));
+    _this.state = {
+      code: _this.props.code,
+      msg: _this.props.message ? _this.props.message : 'Ooops, Algo deu errado aqui, mas nossos desenvolvedores já estão trabalhando nisso!',
+      modal: _this.props.modal
+    };
+    return _this;
+  }
+
+  _createClass(ErrorScreen, [{
+    key: "render",
+    value: function render() {
+      if (this.state.modal) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "modal-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "modal-cont"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "head"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "close"
+      }, "\xD7")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "body"
+      })));else return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null);
+    }
+  }]);
+
+  return ErrorScreen;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/***/ }),
+
 /***/ "./resources/js/components/theme/comp/User.js":
 /*!****************************************************!*\
   !*** ./resources/js/components/theme/comp/User.js ***!
@@ -55670,6 +55768,26 @@ function (_Component) {
 
   return UserDemandHead;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/***/ }),
+
+/***/ "./resources/js/components/theme/comp/exp.js":
+/*!***************************************************!*\
+  !*** ./resources/js/components/theme/comp/exp.js ***!
+  \***************************************************/
+/*! exports provided: Demand, ErrorScreen */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Demand__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Demand */ "./resources/js/components/theme/comp/Demand.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Demand", function() { return _Demand__WEBPACK_IMPORTED_MODULE_0__["Demand"]; });
+
+/* harmony import */ var _Error__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Error */ "./resources/js/components/theme/comp/Error.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ErrorScreen", function() { return _Error__WEBPACK_IMPORTED_MODULE_1__["ErrorScreen"]; });
+
+
+
 
 /***/ }),
 
@@ -55799,6 +55917,36 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--6-1!../../../../../node_modules/postcss-loader/src??ref--6-2!./demand.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/theme/css/demand.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./resources/js/components/theme/css/modal.css":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/theme/css/modal.css ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--6-1!../../../../../node_modules/postcss-loader/src??ref--6-2!./modal.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/theme/css/modal.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
