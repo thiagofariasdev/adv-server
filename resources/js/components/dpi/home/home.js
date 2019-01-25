@@ -7,7 +7,7 @@ export class Home extends Component {
     constructor(props){
         super(props);
         this.state = {
-            demands:[1,2,3,4,5,6,7,8,9,10]
+            demands:[]
         }
     }
     async componentDidMount(){
@@ -22,12 +22,13 @@ export class Home extends Component {
                     <div className="col-md-2"></div>
                         <div className="col-md-7">
                         {
+                            this.state.demands.length > 0 ?
                             this.state.demands.map((i, id)=>(
                                 <Demand
                                     {...i} 
                                     key={id}
                                 />
-                            ))
+                            )) : (<Error code='null'/>)
                         }
                         </div>
                     <div className="col-md-3"></div>
