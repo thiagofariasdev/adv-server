@@ -30,9 +30,8 @@ export class Home extends Component {
                                 />
                             )) : (
                                 <ErrorScreen 
-                                    code='none'
+                                    code='404'
                                     msg="Nenhuma demanda encontrada"
-                                    modal
                                 />)
                         }
                         </div>

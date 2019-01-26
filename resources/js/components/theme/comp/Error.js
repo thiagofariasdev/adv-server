@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './../css/modal.css';
+import { Alert } from "./Alert";
+import './../css/errors.css';
 
 export class ErrorScreen extends Component {
     constructor(props){
@@ -11,26 +12,26 @@ export class ErrorScreen extends Component {
             show:'modal-display'
         }
         this.erros = {
-            none:'',
-            '404':'',
+            '404':'/svg/error_404.svg',
             '505':'',
             '500':''
         };
     }
     render() {
         if(this.state.modal) return (
-            <div className={"modal-container " + this.state.show} onClick={()=>this.setState({show:'hide'})}>
-                <div className="modal-cont">
-                    <div className="head">
-                        <button className="close">&times;</button>
-                    </div>
-                    <div className="body">
-                    </div>
-                </div>
-            </div>
+            <Alert
+            
+            />
         ); else return(
             <div>
-            
+                <div style={{height:600, maxWidth:600}}>
+                    <div 
+                        style={{backgroundImage:'url('+this.erros[this.props.code]+')'}} 
+                        className="img-error-container"
+                    >
+                    </div>
+
+                </div>
             </div>
         );
     }
