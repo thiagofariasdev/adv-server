@@ -25,7 +25,7 @@ export class SideBar extends Component {
                 {to:'/historico', icon:'ti-agenda', title:'Histórico'},
                 {to:'/busca', icon:'ti-search', title:'Buscar'},
                 {to:'/jobs', icon:'ti-bag', title:'Serviços'},
-                {to:'/diligencia', icon:'ti-marker-alt', title:'Lançar Demanda'},
+                {to:'/diligencia', icon:'ti-marker-alt', title:'Requerir Demanda'},
                 {to:'/mapa', icon:'ti-location-pin', title:'Mapa'}
             ]
         }

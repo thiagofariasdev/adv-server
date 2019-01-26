@@ -2596,7 +2596,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".modal-container{\r\n    position: fixed;\r\n    overflow: hidden;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    background-color: rgba(0, 0, 0, 0.4);\r\n    z-index: 1040;\r\n}", ""]);
+exports.push([module.i, ".modal-container{\r\n    display: none;\r\n    position: fixed;\r\n    overflow: hidden;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    background-color: rgba(0, 0, 0, 0.4);\r\n    z-index: 1040;\r\n}\r\n.modal-display{\r\n    display:block;\r\n}", ""]);
 
 // exports
 
@@ -55003,7 +55003,7 @@ function (_Component) {
           key: id
         }));
       }) : react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_theme_comp_exp_js__WEBPACK_IMPORTED_MODULE_3__["ErrorScreen"], {
-        code: "null",
+        code: "none",
         msg: "Nenhuma demanda encontrada",
         modal: true
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -55675,7 +55675,14 @@ function (_Component) {
     _this.state = {
       code: _this.props.code,
       msg: _this.props.message ? _this.props.message : 'Ooops, Algo deu errado aqui, mas nossos desenvolvedores já estão trabalhando nisso!',
-      modal: _this.props.modal
+      modal: _this.props.modal,
+      show: 'modal-display'
+    };
+    _this.erros = {
+      none: '',
+      '404': '',
+      '505': '',
+      '500': ''
     };
     return _this;
   }
@@ -55683,8 +55690,15 @@ function (_Component) {
   _createClass(ErrorScreen, [{
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       if (this.state.modal) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "modal-container"
+        className: "modal-container " + this.state.show,
+        onClick: function onClick() {
+          return _this2.setState({
+            show: 'hide'
+          });
+        }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "modal-cont"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -56412,7 +56426,7 @@ function (_Component2) {
       }, {
         to: '/diligencia',
         icon: 'ti-marker-alt',
-        title: 'Lançar Demanda'
+        title: 'Requerir Demanda'
       }, {
         to: '/mapa',
         icon: 'ti-location-pin',
