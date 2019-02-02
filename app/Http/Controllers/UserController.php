@@ -67,9 +67,20 @@ class UserController extends Controller
             return ['success'=>false, 'field'=>'email', 'message'=>'Usuário não encontrado.'];
         }
         $user = User::where('email', $req->email)->first();
+
         if(!Hash::check($req->password, $user->password)){
-            return ['success'=>false, 'field'=>'pass', 'message'=>'Senha incorreta'];
+            return ['success'=>false, 'field'=>'password', 'message'=>'Senha incorreta'];
         }
+        $location = $user->location()->first(['pt'])->pt;
+        $user->pt = $location;
+
+        return ['success'=>true, 'user'=>$user];
+    }
+    public function atualizeInfo(){
+        $user = Auth::user();
+        $location = $user->location()->first(['pt'])->pt;
+        $user->pt = $location;
+
         return ['success'=>true, 'user'=>$user];
     }
 }
