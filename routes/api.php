@@ -20,5 +20,6 @@ Route::group(['middleware'=>'auth:api'], function(){
     Route::get('/position', 'PositionController@get');
     Route::post('/create_demand', 'DemandController@create');
     Route::get('/get_demands', 'DemandController@index');
+    Route::post('/login', 'UserController@api_login');
 });
 Route::get('/demands', 'DemandController@index');

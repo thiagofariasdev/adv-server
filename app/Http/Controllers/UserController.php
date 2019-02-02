@@ -61,4 +61,15 @@ class UserController extends Controller
         echo '<script>window.localStorage.clear()</script>';
         return redirect('/');
     }
+    public function api_login(Request $req)
+    {
+        if(!User::where('email', $req->email)->exists()){
+            return ['success'=>false, 'field'=>'email', 'message'=>'Usuário não encontrado.'];
+        }
+        $user = User::where('email', $req->email)->first();
+        if(!Hash::check($req->password, $user->password)){
+            return ['success'=>false, 'field'=>'pass', 'message'=>'Senha incorreta'];
+        }
+        return ['success'=>true, 'user'=>$user];
+    }
 }
