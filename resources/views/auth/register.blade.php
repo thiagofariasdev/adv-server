@@ -46,6 +46,15 @@
                         <input name="confirm" id="confirm" type="password" required/>
                         <label for="confirm">Confirmar a senha</label>
                     </div>
+                    <div class="form-group">
+                        <span>Eu sou:</span>
+                        <select class="form-control" name="type" id="type">
+                            <option value="client"> Cliente </option>
+                            <option value="lawer"> Advogado </option>
+                            <option value="office"> Escritório de advocacia </option>
+                            <option value="studant"> Estudante </option>
+                        </select>
+                    </div>
                     <div>
                         <label for="check">
                             <input type="checkbox" name="check" id="check" class="form-check-inline" required/>

@@ -21,6 +21,7 @@ class UserController extends Controller
         $user = User::create([
             'name'=> $req->name,
             'email'=> $req->email,
+            'type' => $req->type,
             'gender'=> $req->gender == 'female' ? false : true,
             'avatar'=> $req->gender == 'female' ? '/svg/user_fema.svg' : '/svg/user_male.svg',
             'password'=>Hash::make($req->senha),
@@ -71,15 +72,15 @@ class UserController extends Controller
         if(!Hash::check($req->password, $user->password)){
             return ['success'=>false, 'field'=>'password', 'message'=>'Senha incorreta'];
         }
-        $location = $user->location()->first(['pt'])->pt;
-        $user->pt = $location;
+        // $location = $user->location()->first(['pt'])->pt;
+        // $user->pt = $location;
 
         return ['success'=>true, 'user'=>$user];
     }
     public function atualizeInfo(){
         $user = Auth::user();
-        $location = $user->location()->first(['pt'])->pt;
-        $user->pt = $location;
+        // $location = $user->location()->first(['pt'])->pt;
+        // $user->pt = $location;
 
         return ['success'=>true, 'user'=>$user];
     }

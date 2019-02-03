@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->char('user_url', 100)->nullable();
             $table->string('email')->unique();
             $table->string('avatar', 500);
+            $table->enum('type', ['lawer', 'studant', 'client', 'office']);
             $table->string('about', 500)->nullable();
             $table->text('exp')->nullable();
             $table->boolean('gender')->default(true);
